@@ -7,8 +7,8 @@ This module demonstrates and practices:
   -- UNIT TESTING.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Billy Davignon.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m4t_tester
 
@@ -38,7 +38,7 @@ def main():
 def run_test_sum_of_digits():
     """ Tests the  sum_of_digits   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function, as follows:
+    # Done: 2. Implement this TEST function, as follows:
     #
     #  Step 1:  This TEST function tests the  sum_of_digits  function.
     #    So read the doc-string of the  sum_of_digits  function
@@ -63,7 +63,7 @@ def run_test_sum_of_digits():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = 16
+    expected = 8 + 2 + 6
     answer = sum_of_digits(826)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
@@ -72,6 +72,24 @@ def run_test_sum_of_digits():
     # TO DO: 2 (continued).
     # Below this comment, add 3 more test cases of your own choosing.
     # -------------------------------------------------------------------------
+
+    # Test 2: 12345
+    expected2 = 1 + 2 + 3 + 4 + 5
+    answer2 = sum_of_digits(12345)
+    print('Test 2 expected:', expected2)
+    print('        actual', answer2)
+
+    # Test 3: 678
+    expected3 = 6 + 7 + 8
+    answer3 = sum_of_digits(678)
+    print('Test 3 expected:', expected3)
+    print('        actual:', answer3)
+
+    # Test 4: 1000000
+    expected4 = 1 + 0 + 0 + 0 + 0 + 0 + 0
+    answer4 = sum_of_digits(1000000)
+    print('Test 4 expected', expected4)
+    print('        actual', answer4)
 
 
 def sum_of_digits(number):
@@ -135,6 +153,12 @@ def run_test_digits_in_cube():
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
 
+    # Test 1: 9
+    expectedcube1 = 7 + 2 + 9
+    answercube1 = digits_in_cube(9)
+    print('Test 1 expected:', expectedcube1)
+    print('        actual', answercube1)
+
 
 def digits_in_cube(n):
     """
@@ -145,6 +169,7 @@ def digits_in_cube(n):
       If the integer (n) is 5    (so n cubed is 125),
       this function returns (1 + 2 + 5), which is 8.
     """
+
     # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).

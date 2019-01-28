@@ -10,14 +10,14 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              center
+#              top left
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
@@ -25,7 +25,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #        -- In what direction on the screen
 #           does the positive Y-axis point?
-#              up
+#              down
 #
 #     b. Write a line of code that constructs a RoseWindow object:
 # window = rg.TurtleWindow()
@@ -76,6 +76,7 @@ rg.Arc()
 rg.Circle.clone()
 rg.Circle.attach_to()
 rg.Circle.move_center_to()
+
 
 def main():
     """
