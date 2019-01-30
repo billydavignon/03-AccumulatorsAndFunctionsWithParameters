@@ -89,6 +89,23 @@ def run_test_sum_square_roots():
     print('Testing the   sum_square_roots   function:')
     print('--------------------------------------------------')
 
+    # Test 1: 3
+    expected = math.sqrt(2) + math.sqrt(4) + math.sqrt(6)
+    answer = sum_square_roots(3)
+    print('Test 1 expected:', expected)
+    print('        acutal', answer)
+
+    # Test 2: 4
+    expected = math.sqrt(2) + math.sqrt(4) + math.sqrt(6) + math.sqrt(8)
+    answer = sum_square_roots(4)
+    print('Test 2 expected', expected)
+    print('        actual', answer)
+
+    # Test 3: 7
+    expected = math.sqrt(2) + math.sqrt(4) + math.sqrt(6) + math.sqrt(8) + math.sqrt(10) + math.sqrt(12) + math.sqrt(14)
+    answer = sum_square_roots(7)
+    print('Test 3 expected:', expected)
+    print('        actual', answer)
 
 def sum_square_roots(n):
     """
@@ -103,6 +120,10 @@ def sum_square_roots(n):
          sqrt(2) + sqrt(4) + sqrt(6) + sqrt(8) + sqrt(10),
       which is about 11.854408.
     """
+    total = 0
+    for k in range(n):
+        total = total + math.sqrt(2*n)
+    return total
     # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
