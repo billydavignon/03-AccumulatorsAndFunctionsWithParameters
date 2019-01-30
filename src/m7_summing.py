@@ -77,7 +77,7 @@ def sum_cosines(n):
 def run_test_sum_square_roots():
     """ Tests the   sum_square_roots   function. """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this function.
+    # Done: 4. Implement this function.
     #   It TESTS the  sum_square_roots  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -122,10 +122,11 @@ def sum_square_roots(n):
     """
     total = 0
     for k in range(n):
-        total = total + math.sqrt(2*n)
+        total = total + (math.sqrt(2*(k + 1)))
     return total
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    #
+    # Done: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
